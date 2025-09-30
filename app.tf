@@ -3,9 +3,9 @@ module "module-monitoring-mq" {
   version = "0.0.1"
 
   # General Configuration
-  customer                            = var.default-tags.Customer
+  customer                            = "jannevaril"#var.default-tags.Customer
   environment                         = var.default-tags.Environment
-  application                         = var.default-tags.Application
+  application                         = "testapp"#var.default-tags.Application
   AWS_region                          = var.region
   current_account_name                = local.current_account_name
   # AWS Account-Specific Configuration
