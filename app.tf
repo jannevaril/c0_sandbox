@@ -12,13 +12,13 @@ module "module-monitoring-mq" {
   infra_ci_conf_item                  = "c10_tph_wlpr_mq.int.cloud.tietoevry.com" # Change if you want to target CI in CMDB manually and override ci_conf_item in each monitoring configuration
   infra_domain_name                   = "int.cloud.tietoevry.com"                       # Domain used for alerting and configuration pairing(hostname plus domain)
   # EventBridge Integration
-#   member_bus_arn                      = module.module-monitoring-infra-evenbridge.aws_cloudwatch_event_bus_member_arn           # Set to false if the EventBridge bus is created in another module (e.g., eks-monitoring)
-#   member_event_bus_name               = module.module-monitoring-infra-evenbridge.aws_cloudwatch_event_bus_member_name
-#   eventbridge_remote_bus_role_arn     = module.module-monitoring-infra-evenbridge.aws_iam_role_eventbridge_remote_bus_arn
-#   gov_master_account                  = var.gov_master_account
+  member_bus_arn                      = "fake"#module.module-monitoring-infra-evenbridge.aws_cloudwatch_event_bus_member_arn           # Set to false if the EventBridge bus is created in another module (e.g., eks-monitoring)
+  member_event_bus_name               = "fake"#module.module-monitoring-infra-evenbridge.aws_cloudwatch_event_bus_member_name
+  eventbridge_remote_bus_role_arn     = "fake"#module.module-monitoring-infra-evenbridge.aws_iam_role_eventbridge_remote_bus_arn
+  gov_master_account                  = "fake"#var.gov_master_account
   # SES
-#   ses_notification_email              = ["noreply@tietoevry.com"]
-#   ses_send_email_policy_arns          = module.module-monitoring-infra-ses.ses_send_email_policy_arns
+  ses_notification_email              = ["noreply@tietoevry.com"]
+  ses_send_email_policy_arns          = "fake"#module.module-monitoring-infra-ses.ses_send_email_policy_arns
   # MQ Monitoring
   mq_monitoring_enabled               = true
   mq_app_metric_alarms                = local.mq_app_metric_alarms
