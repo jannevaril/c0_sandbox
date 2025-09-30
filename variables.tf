@@ -1,16 +1,16 @@
 variable "customer" {
-  default = "nevarjan"
+  default = "jannevaril"
 }
 variable "environment" {
-  default = "sandbox"
+  default = "c0_sandbox"
 }
 
 variable "default-tags" {
   default = {
     "ManagementLevel" = "Managed",
-    "Environment"     = "infragov",
+    "Environment"     = "c0_sandbox",
     "ManagedBy"       = "Terraform",
-    "CustomerCode"    = "c",
+    "CustomerCode"    = "jannevaril",
   }
 }
 variable "region" {
