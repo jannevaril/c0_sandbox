@@ -1,6 +1,6 @@
 module "module-monitoring-mq" {
   source  = "app.terraform.io/jan-nevaril-dev/mq/aws"
-  version = "0.0.3"
+  version = "0.0.4"
 
   # General Configuration
   customer                            = "jannevaril"#var.default-tags.Customer
