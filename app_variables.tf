@@ -67,7 +67,8 @@ variable "mq_log_filters_standardized" {
 
       # Which metric names should use the "QUEUE (N)" pair-processing
       pair_metrics = [
-        "depthnochange"
+        "depthnochange",
+        "messageage"
         # ,"dlqstate","localqueuedepth"
       ]
 
